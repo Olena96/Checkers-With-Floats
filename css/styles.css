@@ -1,0 +1,152 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body { 
+background: url(../images/table.jpg) no-repeat; 
+background-size: cover;
+min-height: 100%;
+}
+
+
+.container { 
+height: 800px;
+width: 800px;
+margin: 30px auto; }
+
+.title { 
+font-size: 36px;
+font-family: 'Righteous', cursive;
+text-align: center;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+
+.cells { 
+height: 800px;
+width: 800px;
+margin-bottom: 30px;
+ }
+
+ .cell { 
+ width: 100px;
+ height: 100px;
+ float:left;
+ border: 2px solid red;
+  }
+
+.one >.cell:nth-child(odd) { 
+background: #000; } 
+
+.one >.cell:nth-child(even) { 
+background: #fff; } 
+
+.two >.cell:nth-child(odd) { 
+background:#fff;  }
+
+.two >.cell:nth-child(even) { 
+background: #000; } 
+
+.three >.cell:nth-child(odd) { 
+background: #000; } 
+
+.three >.cell:nth-child(even) { 
+background: #fff; } 
+
+.four >.cell:nth-child(odd) { 
+background:#fff;  }
+
+.four >.cell:nth-child(even) { 
+background: #000; } 
+
+.five >.cell:nth-child(odd) { 
+background: #000; } 
+
+.five >.cell:nth-child(even) { 
+background: #fff; } 
+
+.six >.cell:nth-child(odd) { 
+background:#fff;  }
+
+.six >.cell:nth-child(even) { 
+background: #000; } 
+
+.seven >.cell:nth-child(odd) { 
+background: #000; } 
+
+.seven >.cell:nth-child(even) { 
+background: #fff; } 
+
+.eight >.cell:nth-child(odd) { 
+background:#fff;  }
+
+.eight >.cell:nth-child(even) { 
+background: #000; } 
+
+
+.one .cell:nth-child(odd):before,
+.two .cell:nth-child(even):before, 
+.three .cell:nth-child(odd):before
+ { 
+ 	content: "";
+background: url(../images/black.png); 
+background-size: cover;
+display: block;
+width: 100px;
+height: 100px;
+}
+
+
+.six .cell:nth-child(even):before,
+.seven .cell:nth-child(odd):before, 
+.eight .cell:nth-child(even):before
+ { 
+ 	content: "";
+background: url(../images/white.png); 
+background-size: cover;
+display: block;
+width: 100px;
+height: 100px;
+}
+
+.cell:nth-child(even):hover:before,
+.cell:nth-child(odd):hover:before { 
+	transform: scale(1.1);
+	 -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+
+	 }
+
+ }
