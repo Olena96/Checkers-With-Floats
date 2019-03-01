@@ -67,7 +67,7 @@ margin-bottom: 30px;
  border: 2px solid red;
   }
 
-.one >.cell:nth-child(odd) { 
+/*.one >.cell:nth-child(odd) { 
 background: #000; } 
 
 .one >.cell:nth-child(even) { 
@@ -114,6 +114,19 @@ background:#fff;  }
 
 .eight >.cell:nth-child(even) { 
 background: #000; } 
+
+*/
+
+.line:nth-child(odd) .cell:nth-child(odd) { 
+background: #000; }  
+.line:nth-child(even) .cell:nth-child(even) { 
+background: #000; }
+.line:nth-child(odd) .cell:nth-child(even) { 
+background: #fff; }  
+.line:nth-child(even) .cell:nth-child(odd) { 
+background: #fff; }
+
+
 
 
 .one .cell:nth-child(odd):before,
